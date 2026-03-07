@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Türk İşaret Dili Sözlüğü</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Sol üst marka -->
+    <div class="brand">sign.translate by SILENTIA</div>
+
+    <!-- Ana kart -->
+    <div class="card">
+      <h1>Türk İşaret Dili Sözlüğü</h1>
+      <p class="subtitle">(Turkish Sign Language Dictionary)</p>
+
+      <!-- Giriş alanı -->
+      <div class="input-row">
+        <input
+          id="wordInput"
+          type="text"
+          placeholder="Bir kelime yaz..."
+          autocomplete="off"
+        />
+        <button id="showBtn">Göster</button>
+      </div>
+
+      <!-- Avatar alanı -->
+      <div id="avatarContainer">
+        <img id="avatarPose" src="" alt="Avatar animasyonu" />
+        <div id="avatarFallback" style="display: none;">Bu poz bulunamadı</div>
+      </div>
+
+      <!-- Mesaj -->
+      <div id="message"></div>
+
+      <!-- Kart içi creator (sağ alt, küçük, beyaz alan içinde) -->
+      <div class="creator-card">created by nisa &amp; sude</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+/* Genel sayfa stili */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
+}
+
+/* Sol üst marka */
+.brand {
+  position: fixed;
+  top: 18px;
+  left: 22px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+}
+
+/* Ortadaki kart */
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 32px 40px 44px;
+  border-radius: 26px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 440px;
+  width: 92%;
+}
+
+/* Başlık */
+.card h1 {
+  margin: 0 0 6px 0;
+  font-size: 26px;
+  color: #333;
+}
+
+/* Alt başlık */
+.subtitle {
+  margin-bottom: 22px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Input + buton */
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* Input */
+#wordInput {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #e0b1c2;
+  font-size: 15px;
+  outline: none;
+}
+
+#wordInput:focus {
+  border-color: #ff7eb3;
+  box-shadow: 0 0 0 2px rgba(255, 126, 179, 0.3);
+}
+
+/* Göster butonu */
+#showBtn {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Avatar alanı */
+#avatarContainer {
+  margin-top: 22px;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Avatar */
+#avatarPose {
+  width: 460px;
+  max-width: 95%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mesaj */
+#message {
+  margin-top: 14px;
+  font-weight: 600;
+  color: #d6245f;
+}
+
+/* Bulunamadı yazısı */
+#avatarFallback {
+  font-weight: 700;
+  color: #b3003a;
+}
+
+/* Kart içi created by */
+.creator-card {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
